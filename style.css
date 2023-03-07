@@ -1,0 +1,37 @@
+* {
+    padding: 0 1em;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#grid-container {
+    /* specify the container type, grid */
+    margin: 0 5em;
+    display: grid;
+    padding: 1em 1em;
+    background-color: red;
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.5); 
+    /* repeatedly make div containers for each row the same size */
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    /* repeatedly make div containers for each column the same size */
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+  
+.grid-item {
+    padding: 1em;
+    /* remove later */
+    border: 1px solid #ddd; 
+    background-color: beige;
+}
+
+.buttons {
+    display: flex;
+    padding: 2em;
+    align-items: center;
+    justify-content: center;
+}
