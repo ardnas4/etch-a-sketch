@@ -7,11 +7,27 @@
 </head>
 <body>
     <h1>Etch A Sketch</h1>
-	<div id="grid-container"></div>
+
+    <div class="gridBox">
+        <div class="grid"></div>
+    </div>
+
     <div class="buttons">
-        <button id="erase-button" onclick="eraseGrid()">Erase</button>
-        <input id="slider" type="range" min="1" max="100" value="16">16 x 16</input>
-        <output id="output"></output>
+
+        <button id="reset">Reset</button>
+
+        <button id="black"></button>
+
+        <button id="rgb"></button>
+
+        <div class="sliderAndValue">
+            <input type="range" min="2" max="100" value="16" id="slider">
+            <div class="value">16</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a id="github" href="https://github.com/ardnas4">@ Sandra's Github</a>
     </div>
 </body>
 </html>
